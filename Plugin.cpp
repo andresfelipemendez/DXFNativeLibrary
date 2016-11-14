@@ -5,6 +5,12 @@
 #define EXPORT_API // XCode does not need annotating exported functions, so define is empty
 #endif
 
+
+#include <string>
+
+std::string filePath;
+std::string status;
+
 extern "C"
 {
 	const EXPORT_API char*  PrintHello(){
@@ -21,5 +27,20 @@ extern "C"
 
 	float EXPORT_API AddTwoFloats(float a, float b) {
 		return a + b;
+	}
+
+	void EXPORT_API OpenFile(const char* str)
+	{
+		filePath = std::string(str);
+		status = "opening file";
+	}
+
+	const EXPORT_API char*  Path(const char* str)
+	{
+		return filePath.c_str();
+	}
+
+	const EXPORT_API char*  GetStatus() {
+		return status.c_str();
 	}
 }
