@@ -6,16 +6,20 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ASimplePlugin", "TexturePlu
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
 		Release|Win32 = Release|Win32
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Debug|Win32.ActiveCfg = Debug|Win32
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Debug|Win32.Build.0 = Debug|Win32
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Debug|x64.ActiveCfg = Debug|x64
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Debug|x64.Build.0 = Debug|x64
+		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Release|Any CPU.ActiveCfg = Release|Win32
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Release|Win32.ActiveCfg = Release|Win32
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Release|Win32.Build.0 = Release|Win32
 		{05036C7A-18C6-4A79-BC31-3ABD5C3B0593}.Release|x64.ActiveCfg = Release|x64
