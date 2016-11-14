@@ -1,0 +1,4 @@
+VisualStudio/x64/
+VisualStudio/build/
+VisualStudio/.idea/
+*.db
