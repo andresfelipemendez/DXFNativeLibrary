@@ -8,31 +8,29 @@
 
 #include <string>
 
+#include "dxflib\dl_dxf.h"
+#include "dxflib\dl_creationadapter.h"
+#include "MyParser.h"
+
 std::string filePath;
 std::string status;
 
 extern "C"
 {
-	const EXPORT_API char*  PrintHello(){
-		return "Hello";
-	}
-
-	int EXPORT_API PrintANumber(){
-		return 5;
-	}
-
-	int EXPORT_API AddTwoIntegers(int a, int b) {
-		return a + b;
-	}
-
-	float EXPORT_API AddTwoFloats(float a, float b) {
-		return a + b;
-	}
-
 	void EXPORT_API OpenFile(const char* str)
 	{
 		filePath = std::string(str);
-		status = "opening file";
+
+		MyParser* parser = new MyParser();
+		DL_Dxf* dxf = new DL_Dxf();
+
+		if (!dxf->in(str, parser)) { // if file open failed
+			status = " could not be opened.\n";
+			return;
+		}
+		else {
+			status = "opening file";
+		}
 	}
 
 	const EXPORT_API char*  Path(const char* str)

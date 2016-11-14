@@ -124,7 +124,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\dxflib\dl_dxf.cpp" />
+    <ClCompile Include="..\dxflib\dl_writer_ascii.cpp" />
+    <ClCompile Include="..\MyParser.cpp" />
     <ClCompile Include="..\Plugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dxflib\dl_attributes.h" />
+    <ClInclude Include="..\dxflib\dl_codes.h" />
+    <ClInclude Include="..\dxflib\dl_creationadapter.h" />
+    <ClInclude Include="..\dxflib\dl_creationinterface.h" />
+    <ClInclude Include="..\dxflib\dl_dxf.h" />
+    <ClInclude Include="..\dxflib\dl_entities.h" />
+    <ClInclude Include="..\dxflib\dl_exception.h" />
+    <ClInclude Include="..\dxflib\dl_extrusion.h" />
+    <ClInclude Include="..\dxflib\dl_global.h" />
+    <ClInclude Include="..\dxflib\dl_writer.h" />
+    <ClInclude Include="..\dxflib\dl_writer_ascii.h" />
+    <ClInclude Include="..\MyParser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
